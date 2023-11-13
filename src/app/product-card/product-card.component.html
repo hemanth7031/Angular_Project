@@ -1,0 +1,21 @@
+<div class="wrapper">
+    <ng-container *ngFor="let p of productCard">
+        <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>{{p.title | slice:1:30}}</mat-card-title>
+              <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image [src]="p['image']" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                {{p.description}}
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-raised-button color="accent">Add to Cart</button>
+              <button mat-raised-button>Buy Now</button>
+            </mat-card-actions>
+          </mat-card>
+          
+    </ng-container>
+</div>

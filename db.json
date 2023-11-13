@@ -1,0 +1,55 @@
+{
+  "heroForm": [
+    {
+      "productName": "trytr",
+      "category": "furit",
+      "freshness": "Spring",
+      "price": 666,
+      "comment": "uytu",
+      "date": "2022-10-20T18:30:00.000Z",
+      "id": 1
+    },
+    {
+      "productName": "yoshitha",
+      "category": "furit",
+      "freshness": "Winter",
+      "price": 10,
+      "comment": "my enmie",
+      "date": "2022-11-16T18:30:00.000Z",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": [
+    {
+      "id": 0,
+      "firstName": "Hemanth",
+      "lastName": "Kumar",
+      "email": "hemanth@gmail.com",
+      "mobile": 123456789,
+      "salary": 50000
+    },
+    {
+      "id": 2,
+      "firstName": "raju",
+      "lastName": "kumar",
+      "email": "test@gmail",
+      "mobile": 686786,
+      "salary": 656757
+    },
+    {
+      "id": 3,
+      "firstName": "tim@mmh-demo.com",
+      "lastName": "test",
+      "email": "test@gmail.com",
+      "mobile": 7687,
+      "salary": 56565
+    }
+  ]
+}

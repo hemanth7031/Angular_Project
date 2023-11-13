@@ -1,0 +1,32 @@
+<div class="center">
+
+    <h1>Testing Of Angular Contents</h1>
+---------------------------
+<!-- NgIf Example -->
+<h2 *ngIf="!data">loading data......</h2>
+<h2 *ngIf="data">The NgIf Content Working Or Not</h2>
+
+<!-- Ngif else Example -->
+<h2 *ngIf="!data; else sample">loading content</h2>
+<!-- template refernce variable -->
+<ng-template #sample> 
+<h2>Ngif else Condition</h2>
+</ng-template>
+
+
+<!-- NgFor Example -->
+
+<!-- syntax <div *ngFor ="let ele of arr"></div> -->
+<!-- variables index,first,last,even,odd -->
+<table>
+    <tr *ngFor="let Movie of Movies">
+        <td>{{Movie}}</td>
+    </tr>
+</table>
+
+<!-- Repeat data stored -->
+
+<div *ngFor="let n of num">
+<h3> paragraph {{n}}</h3>
+</div>
+</div>

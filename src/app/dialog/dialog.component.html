@@ -1,0 +1,45 @@
+<h1 mat-dialog-title> Add product card</h1>
+<div mat-dialog-content>
+  <form  [formGroup]="heroForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Product Name</mat-label>
+      <input matInput placeholder="Placeholder" formControlName="productName">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>product Category </mat-label>
+      <mat-select placeholder="Placeholder" formControlName="category">
+        <mat-option value="furit">Fruit</mat-option>
+        <mat-option value="furit">Fruit</mat-option>
+        <mat-option value="furit">Fruit</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Choose a date</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="date">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  
+    <label id="example-radio-group-label">Product fresh</label>
+    <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" formControlName="freshness">
+      <mat-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
+        {{season}}
+      </mat-radio-button>
+    </mat-radio-group>
+  
+    <mat-form-field appearance="outline">
+      <mat-label>price</mat-label>
+      <input matInput placeholder="Placeholder" type="number" formControlName="price">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>comments</mat-label>
+      <textarea matInput name="" id="" cols="30" rows="10" formControlName="comment"></textarea>
+    </mat-form-field>
+  
+  </form>
+</div>
+  <div mat-dialog-actions [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>close</button>
+    <button mat-raised-button color="primary" (click)="addProductCart()">save</button>
+
+  </div>
